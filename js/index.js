@@ -14,6 +14,7 @@ $(document).ready(function(e) {
         $mheader.toggleClass('tog-left');
     });
 
+
 });
 
 function toggler_onclick($win, $mheader, width) {
@@ -23,3 +24,14 @@ function toggler_onclick($win, $mheader, width) {
         $mheader.css({ left: `0px` });
     }
 }
+
+//typed'
+var typed = new Typed('#type', {
+    strings: ['Web Developer'],
+    showCursor: true,
+    cursorChar: '|',
+    loop: true,
+    backSpeed: 50,
+    typeSpeed: 50,
+
+});
