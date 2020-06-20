@@ -18,7 +18,7 @@ $(document).ready(function(e) {
 });
 
 function toggler_onclick($win, $mheader, width) {
-    if ($win.width() <= 768) {
+    if ($win.width() < 768) {
         $mheader.css({ left: `-${width}px` });
     } else {
         $mheader.css({ left: `0px` });
@@ -27,7 +27,7 @@ function toggler_onclick($win, $mheader, width) {
 
 //typed'
 var typed = new Typed('#type', {
-    strings: ['Web Developer'],
+    strings: ['Web Developer', 'Data Scientist'],
     showCursor: true,
     cursorChar: '|',
     loop: true,

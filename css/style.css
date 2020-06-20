@@ -1,145 +1,179 @@
-/*import fonts from font.css*/
-
-@import url(./font.css);
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
-/*Header styling*/
-
-#main-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    transition: left 0.5s ease;
-}
-
-#main-header nav {
-    height: 100vh;
-}
-
-.logo h1 {
-    letter-spacing: 2px;
-    width: 100%;
-    font-size: 25px;
-    font-weight: normal;
-    font-family: "Abril Fatface", cursive;
-    text-shadow: 2px 2px;
-}
-
-.logo h1 a {
-    display: inline-block;
-    text-align: left;
-    color: #000000;
-    overflow: hidden;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background-image: url(../img/bg_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.logo h1 a:hover {
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#main-header .nav-link {
-    color: black;
-    font-family: "Roboto", cursive;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: .7rem 1rem;
-    border-bottom: 1px solid wheat;
-}
-
-#main-header .active,
-#main-header .nav-link:hover {
-    color: black;
-    font-weight: bold;
-}
-
-#main-header .social-icon a {
-    text-decoration: none;
-    color: ivory;
-}
-
-#main-header .social-icon a:hover {
-    border-radius: 5px;
-    border: solid 1px;
-}
-
-#main-header .tog {
-    background: none;
-    color: black;
-    top: 25px;
-    right: 20px;
-    position: fixed;
-    border: 1px solid ivory;
-}
-
-.tog-left {
-    left: 0!important;
-    width: 1000px!important;
-}
-
-
-/*THE MAIN SECTION*/
-
-
-/*branding section styling*/
-
-#branding .brand {
-    background: url(../img/landscape-5282903_1920.jpg) no-repeat;
-    height: 100vh;
-    background-size: cover;
-    width: 100%;
-    position: relative;
-}
-
-#branding .brand .my-desc {
-    margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#branding .brand .my-desc .my-img {
-    width: 200px;
-    height: 200px;
-    background-image: url(../img/fbpic.jpg);
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    background-size: 100%;
-}
-
-
-/*media queries*/
-
-@media(max-width:301px) {
-    nav {
-        margin-top: 30px;
+    /*import fonts from font.css*/
+    
+    @import url(./font.css);
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
     }
-    nav .logo.py-5 {
-        padding-bottom: 10px!important;
+    
+    p {
+        text-align: left;
     }
+    
+    h4 {
+        font-size: 15px;
+        color: gray;
+    }
+    
+    .title {
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    /*Header styling*/
+    
+    #main-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: left 0.5s ease;
+    }
+    
+    #main-header nav {
+        height: 100vh;
+    }
+    
+    .logo h1 {
+        letter-spacing: 2px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: normal;
+        font-family: "Abril Fatface", cursive;
+        text-shadow: 2px 2px;
+    }
+    
+    .logo h1 a {
+        display: inline-block;
+        text-align: left;
+        color: #000000;
+        overflow: hidden;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        background-image: url(../img/bg_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .logo h1 a:hover {
+        color: inherit;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    #main {
+        overflow: hidden;
+    }
+    
+    #main-header .nav-link {
+        color: black;
+        font-family: "Roboto", cursive;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: .7rem 1rem;
+        border-bottom: 1px solid wheat;
+    }
+    
+    #main-header .active,
+    #main-header .nav-link:hover {
+        color: black;
+        font-weight: bold;
+    }
+    
     #main-header .social-icon a {
-        text-align: center;
+        text-decoration: none;
+        color: ivory;
     }
-}
-
-@media screen and (min-width:768px) {
-    .tog {
-        display: none;
+    
+    #main-header .social-icon a:hover {
+        border-radius: 5px;
+        border: solid 1px;
     }
-}
+    
+    #main-header .tog {
+        background: none;
+        color: black;
+        top: 25px;
+        right: 20px;
+        position: fixed;
+        border: 1px solid ivory;
+    }
+    
+    .tog-left {
+        left: 0!important;
+        width: 1000px!important;
+    }
+    /*THE MAIN SECTION*/
+    /*branding section styling*/
+    
+    #branding .brand {
+        background: url(../img/landscape-5282903_1920.jpg) no-repeat;
+        height: 100vh;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    }
+    
+    #branding .brand .my-desc {
+        margin: 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #branding .brand .my-desc .my-img {
+        width: 200px;
+        height: 200px;
+        background-image: url(../img/fbpic.jpg);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        background-size: 100%;
+    }
+    /* About section styling*/
+    
+    .skills p,
+    .skills span {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    /* Contact section styling*/
+    
+    #contact {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    #contact .contact-title {
+        font-size: 25px;
+    }
+    /*media queries*/
+    
+    @media(max-width: 301px) {
+        nav {
+            margin-top: 30px;
+        }
+        nav .logo.py-5 {
+            padding-bottom: 10px!important;
+        }
+        #main-header .social-icon a {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width:320px) {
+        #main-header {
+            z-index: 99999;
+        }
+    }
+    
+    @media screen and (min-width:768px) {
+        .tog {
+            display: none;
+        }
+    }
