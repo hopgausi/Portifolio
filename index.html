@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Hopson Gausi personal website, web developer">
+    <meta name="keywords" content="Hopson Gausi, hopgausi, Web developer">
+    <meta name="author" content="Hopson Gausi">
     <title>Hopson Gausi</title>
 
     <!-- Bootstrap CSS-->
@@ -17,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".primary-nav" data-offset="50">
     <!-- MAIN HEADER SECTION-->
     <header id="main-header">
         <div class="row m-0">
@@ -32,8 +35,8 @@
                     <div class="text-center d-flex flex-column">
                         <a class="nav-item nav-link active" href="index.html">Home</a>
                         <a class="nav-item nav-link" href="#about">about</a>
-                        <a class="nav-item nav-link" href="#">portifolio</a>
-                        <a class="nav-item nav-link" href="#">blog</a>
+                        <a class="nav-item nav-link" href="#portifolio">portifolio</a>
+                        <a class="nav-item nav-link" href="#blog">blog</a>
                         <a class="nav-item nav-link" href="#contact">contact</a>
                     </div>
                     <!--##end nav links ##-->
@@ -45,6 +48,7 @@
                         <a class="px-2 " href="https://github.com/hopgausi" target="_blank"><span><i class="fab fa-github "></i></span></a>
                         <a class="px-2 " href="https://www.linkedin.com/in/hopgausi" target="_blank"><span><i class="fab fa-linkedin "></i></span></a>
                     </div>
+
                     <!--End  social icons-->
                 </nav>
             </div>
@@ -60,7 +64,7 @@
             <div class="col-md-9 offset-md-3 px-0">
 
 
-                <!--branding section-->
+                <!--branding sectiLorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing elit. Ut aliquidLorem ipsum dolor sit amet consectetur adipisicing elit.dolor sit amet consecteturon-->
                 <section id="branding">
                     <div class="brand">
                         <div class="my-desc text-center">
@@ -92,7 +96,7 @@
                                         all of your data needs including data collection, data wrangling/munging/cleaning, and preparing it for any analysis in your project.
                                     </p>
                                     <div class="mt-4 float-left">
-                                        <a href="#" class="btn btn-danger mx-2" role="button">Hire Me</a>
+                                        <a href="#contact" class="btn btn-danger mx-2" role="button">Hire Me</a>
                                         <a href="#" class="btn btn-danger mx-2" role="button">CV</a>
                                     </div>
                                 </div>
@@ -126,7 +130,6 @@
                                                 <div class="progress-bar " style="width:80%;"></div>
                                             </div>
                                         </div>
-
                                         <div class="pt-2">
                                             <div class=" d-flex flex-row justify-content-between">
                                                 <p>CSS</p>
@@ -196,7 +199,71 @@
                 <!-- ### end about section ###-->
 
 
+                <!-- portifolio section -->
+                <section id="portifolio" class="m-5">
 
+                    <div class="text-center">
+                        <div>
+                            <h1 class="title">Portifolio</h1>
+                        </div>
+                        <div class="container mt-5">
+                            <h4 class="text-uppercase"><span id="overlay"></span></h4>
+                            <div class="row mr-auto">
+                                <div class="col-sm-6 mt-2">
+                                    <div class="card border-0">
+                                        <img class="card-img-top img-fluid port-card-img" src="./img/Screenshot from 2020-07-14 17-51-39.png" alt="Card image">
+                                        <div class="overlay">
+                                            <div class="text-over">
+                                                <a href="#" class="btn btn-sm btn-danger m-2">Check Full Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mt-2">
+                                    <div class="card border-0">
+                                        <img class="card-img-top img-fluid port-card-img" src="./img/Screenshot from 2020-07-14 17-51-39.png" alt="Card image">
+                                        <div class="overlay">
+                                            <div class="text-over">
+                                                <a href="#" class="btn btn-sm btn-danger m-2">Check Full Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ### end portifolio section ###-->
+
+
+                <!-- blog section -->
+                <section id="blog" class="m-5">
+
+                    <div class="text-center">
+                        <div>
+                            <h1 class="title">blog</h1>
+                        </div>
+                        <div class="container mt-5">
+                            <h4 class="text-uppercase text-left">Latest From Blog</h4>
+                            <p class="text-right mt-0"><a href="">View All Posts</a></p>
+                            <div class="row mr-auto">
+                                <div class="col-sm-4 mt-2">
+                                    <div class="card border-0 shadow-sm">
+                                        <img class="card-img-top img-fluid post-img" src="./img/fbpic.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <h4 class="card-title font-weight-bold text-l">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid</h4>
+
+                                            <h4 class="card-title">Hopson Gausi | July 18, 2020</h4>
+                                            <hr>
+                                            <a href="#" class="btn btn-primary">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ### end blog section ###-->
 
 
                 <!-- contact section -->
@@ -254,6 +321,7 @@
     <script src="./js/typed.min.js "></script>
     <!-- Custom js-->
     <script src="./js/index.js "></script>
+
 
 </body>
 

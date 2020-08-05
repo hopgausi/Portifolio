@@ -142,6 +142,16 @@
         text-transform: uppercase;
         font-size: 12px;
     }
+    
+    .pt-2 {
+        opacity: 0.8;
+    }
+    
+    .pt-2:hover {
+        opacity: 1;
+        filter: alpha(opacity=50);
+        font-weight: bolder;
+    }
     /* Contact section styling*/
     
     #contact {
@@ -151,6 +161,55 @@
     
     #contact .contact-title {
         font-size: 25px;
+    }
+    /* Portifolio*/
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+    }
+    
+    .card:hover .overlay {
+        width: 100%;
+    }
+    
+    .text-over a {
+        font-size: 20px;
+    }
+    
+    .card:hover .port-card-img {
+        opacity: 0.3;
+        filter: alpha(opacity=50);
+        /* For IE8 and earlier */
+    }
+    
+    .text-over {
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    /*blog */
+    
+    .post-img {
+        height: 150px;
+        width: 100%;
+    }
+    
+    #blog .card:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(68, 44, 44, 0.19)!important;
+    }
+    
+    .text-l {
+        text-align: left;
     }
     /*media queries*/
     

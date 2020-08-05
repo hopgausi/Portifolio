@@ -27,9 +27,18 @@ function toggler_onclick($win, $mheader, width) {
 
 //typed'
 var typed = new Typed('#type', {
-    strings: ['Web Developer', 'Data Scientist'],
+    strings: ['Web Developer'],
     showCursor: true,
     cursorChar: '|',
+    loop: true,
+    backSpeed: 50,
+    typeSpeed: 50,
+
+});
+var typed = new Typed('#overlay', {
+    strings: ['My personal projects'],
+    showCursor: true,
+    cursorChar: '.',
     loop: true,
     backSpeed: 50,
     typeSpeed: 50,
